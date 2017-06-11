@@ -1,0 +1,2 @@
+class ProductRecommendation < ApplicationRecord
+end

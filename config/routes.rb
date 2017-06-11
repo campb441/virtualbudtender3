@@ -1,4 +1,75 @@
 Rails.application.routes.draw do
+  devise_for :budtenders
+  devise_for :users
+  # Routes for the Product_recommendation resource:
+  # CREATE
+  get "/product_recommendations/new", :controller => "product_recommendations", :action => "new"
+  post "/create_product_recommendation", :controller => "product_recommendations", :action => "create"
+
+  # READ
+  get "/product_recommendations", :controller => "product_recommendations", :action => "index"
+  get "/product_recommendations/:id", :controller => "product_recommendations", :action => "show"
+
+  # UPDATE
+  get "/product_recommendations/:id/edit", :controller => "product_recommendations", :action => "edit"
+  post "/update_product_recommendation/:id", :controller => "product_recommendations", :action => "update"
+
+  # DELETE
+  get "/delete_product_recommendation/:id", :controller => "product_recommendations", :action => "destroy"
+  #------------------------------
+
+  # Routes for the Comment resource:
+  # CREATE
+  get "/comments/new", :controller => "comments", :action => "new"
+  post "/create_comment", :controller => "comments", :action => "create"
+
+  # READ
+  get "/comments", :controller => "comments", :action => "index"
+  get "/comments/:id", :controller => "comments", :action => "show"
+
+  # UPDATE
+  get "/comments/:id/edit", :controller => "comments", :action => "edit"
+  post "/update_comment/:id", :controller => "comments", :action => "update"
+
+  # DELETE
+  get "/delete_comment/:id", :controller => "comments", :action => "destroy"
+  #------------------------------
+
+  # Routes for the Photo resource:
+  # CREATE
+  get "/photos/new", :controller => "photos", :action => "new"
+  post "/create_photo", :controller => "photos", :action => "create"
+
+  # READ
+  get "/photos", :controller => "photos", :action => "index"
+  get "/photos/:id", :controller => "photos", :action => "show"
+
+  # UPDATE
+  get "/photos/:id/edit", :controller => "photos", :action => "edit"
+  post "/update_photo/:id", :controller => "photos", :action => "update"
+
+  # DELETE
+  get "/delete_photo/:id", :controller => "photos", :action => "destroy"
+  #------------------------------
+
+  # Routes for the Like resource:
+  # CREATE
+  get "/likes/new", :controller => "likes", :action => "new"
+  post "/create_like", :controller => "likes", :action => "create"
+
+  # READ
+  get "/likes", :controller => "likes", :action => "index"
+  get "/likes/:id", :controller => "likes", :action => "show"
+
+  # UPDATE
+  get "/likes/:id/edit", :controller => "likes", :action => "edit"
+  post "/update_like/:id", :controller => "likes", :action => "update"
+
+  # DELETE
+  get "/delete_like/:id", :controller => "likes", :action => "destroy"
+  #------------------------------
+
+root 'photos#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 end
