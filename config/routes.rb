@@ -69,7 +69,7 @@ Rails.application.routes.draw do
   get "/delete_like/:id", :controller => "likes", :action => "destroy"
   #------------------------------
 
-root 'photos#index'
+root 'product_recommendations#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 end

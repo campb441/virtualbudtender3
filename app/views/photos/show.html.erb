@@ -8,7 +8,9 @@
 
       <dd><img src="<%= @photo.image %>"></dd>
       <dd><%= @photo.caption %></dd>
-      
+
+        <p>Comments: <%= render @photo.comments %></p>
+        
       <dt>User</dt>
       <dd><%= @photo.user_id %></dd>
 
