@@ -8,14 +8,14 @@
 
       <dd><img src="<%= @photo.image %>"></dd>
       <dd><%= @photo.caption %></dd>
-
+      <a href="/comments" class=btn" btn-primary">
         <p>Comments: <%= render @photo.comments %></p>
-        
-      <dt>User</dt>
-      <dd><%= @photo.user_id %></dd>
+      </a>
+      <dt>User Likes</dt>
+      <dd><%= @photo.user %></dd>
 
-      <dt>Budtender</dt>
-      <dd><%= @photo.budtender_id %></dd>
+      <dt>Budtender Likes</dt>
+      <dd><%= @photo.budtender%></dd>
 
     </dl>
 

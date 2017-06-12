@@ -7,67 +7,72 @@
 <form>
   <div class="form-group">
     <h4>I prefer...</h4>
-    <div class="radio">
+    <div class="checkbox">
       <label>
-        <input type="radio" name="smokeable" id="optionsRadios1" value="option1">
+        <input type="checkbox" name="smokeable" id="optionsRadios1" value="1">
         Smokable Products
       </label>
     </div>
-    <div class="radio">
+    <div class="checkbox">
       <label>
-        <input type="radio" name="smokeable" id="optionsRadios2" value="option2">
+        <input type="checkbox" name="smokeable" id="optionsRadios2" value="2">
         Non-Smokable Products
       </label>
     </div>
-    <div class="radio disabled">
+    <div class="checkbox">
       <label>
-        <input type="radio" name="smokeable" id="optionsRadios3" value="option3" >
+        <input type="checkbox" name="smokeable" id="optionsRadios3" value="3" >
         Both
       </label>
     </div>
 
     <h4>I am seeking the following benefits...</h4>
-    <div class="radio disabled">
+    <div class="checkbox">
       <label>
-        <input type="radio" name="psychoactive" id="optionsRadios4" value="option4" >
+        <input type="checkbox" name="psychoactive" id="optionsRadios4" value="4" >
         Psychoactive Effects
       </label>
     </div>
-    <div class="radio disabled">
+    <div class="checkbox">
       <label>
-        <input type="radio" name="psychoactive" id="optionsRadios5" value="option5" >
+        <input type="checkbox" name="psychoactive" id="optionsRadios5" value="5" >
         Non-Psychoactive Effects
       </label>
     </div>
-    <div class="radio disabled">
+    <div class="checkbox">
       <label>
-        <input type="radio" name="psychoactive" id="optionsRadios6" value="option6" >
+        <input type="checkbox" name="psychoactive" id="optionsRadios6" value="6" >
         Both
       </label>
     </div>
 
     <h4>I am a..</h4>
-    <div class="radio disabled">
+    <div class="checkbox">
       <label>
-        <input type="radio" name="medicinal" id="optionsRadios7" value="option7" >
+        <input type="checkbox" name="medicinal" id="optionsRadios7" value="7" >
         Medicinal Patient
       </label>
     </div>
-    <div class="radio disabled">
+    <div class="checkbox">
       <label>
-        <input type="radio" name="medicinal" id="optionsRadios8" value="option8" >
+        <input type="checkbox" name="medicinal" id="optionsRadios8" value="8" >
         Recreational User
       </label>
     </div>
-    <div class="radio disabled">
+    <div class="checkbox">
       <label>
-        <input type="radio" name="medicinal" id="optionsRadios9" value="option9" >
+        <input type="checkbox" name="medicinal" id="optionsRadios9" value="9" >
         Both
       </label>
     </div>
 
-  <button type="submit" class="btn btn-default">Submit</button>
+  <a href="/results/" class="btn btn-lg btn-success">Submit</a>
 </form>
+
+<span id="results">
+        <p><b>We recommend the following items...</b></p>
+      </span>
+
 
 
 
